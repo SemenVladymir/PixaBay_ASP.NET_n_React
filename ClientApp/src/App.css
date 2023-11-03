@@ -27,6 +27,8 @@ body {
 }
 
 img {
+  max-width:100%;
+  height:auto;
   flex: auto;
   border-radius: 10px;
   object-fit: cover;

@@ -50,7 +50,7 @@ class App extends Component {
             <div className='container'>
               {images.map(image =>
                 <div className='item-content'>
-                  <img src={image.UrlPhoto} alt="pixabay" height={this.width/image.Size} width={480}></img>
+                  <img src={image.UrlPhoto} alt="pixabay"></img>
                 </div>
               )}
             </div>

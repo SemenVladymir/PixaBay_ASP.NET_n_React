@@ -2,6 +2,7 @@
 using Newtonsoft.Json.Linq;
 using Pixabay.DAL.EF;
 using Pixabay.DAL.Entities;
+using System.Net;
 
 namespace TestASP.Net.Controllers
 {
@@ -46,5 +47,31 @@ namespace TestASP.Net.Controllers
             else
                 return new JsonResult("You need to input an amount of images!\nThe amount has to be 3 or more.");
         }
+
+        [HttpPost]
+        [Route("SaveImage")]
+        public JsonResult SaveFile([FromForm] MyImage newData)
+        {
+            try
+            {
+                if (newData.UrlPhoto != null)
+                {
+                    WebClient client = new WebClient();
+                    Uri img;
+                    img = new Uri(newData.UrlPhoto);
+                    client.DownloadFile(img, $@"D:/Images/{newData.Name}");
+                    return new JsonResult("The image saved");
+                }
+                else
+                    return new JsonResult("The image don`t save!");
+            }
+            catch (Exception)
+            {
+                return new JsonResult("");
+            }
+        }
+
+        
+
     }
 }

@@ -9,9 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestASP.Net", "TestASP.Net.
 		{89EC14F9-EBCF-43DB-BF8C-476ACB50B4CA} = {89EC14F9-EBCF-43DB-BF8C-476ACB50B4CA}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pixabay.DAL", "..\Pixabay.DAL\Pixabay.DAL.csproj", "{4DE8908E-CB75-4E55-9D25-7BBF4803C9A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pixabay.DAL", "..\Pixabay.DAL\Pixabay.DAL.csproj", "{4DE8908E-CB75-4E55-9D25-7BBF4803C9A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pixabay.BLL", "..\Pixabay.BLL\Pixabay.BLL.csproj", "{89EC14F9-EBCF-43DB-BF8C-476ACB50B4CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pixabay.BLL", "..\Pixabay.BLL\Pixabay.BLL.csproj", "{89EC14F9-EBCF-43DB-BF8C-476ACB50B4CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
